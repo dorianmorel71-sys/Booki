@@ -1,0 +1,92 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+:root {
+  --main-color: #0065FC;
+  --main-bg-color: #F2F2F2;
+  --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+  color: var(--main-color);
+}
+
+
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+a {
+  cursor: pointer;
+}
+
+header {
+  width: 80rem;
+  margin: 0 auto;
+}
+
+header img {
+  width: 4rem;
+  height: 1.3rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: .5rem;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  font-size: 15px;
+  gap: 30px;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: #000000;
+  border-top: 2px solid transparent;
+  padding-top: 24px;
+  transition: all 0.2s ease;
+}
+
+.header__nav-link:hover,
+.header__nav-link.active {
+  border-color: #0065FC;
+  color: #0065FC;
+}
+
+
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  background-color: #F2F2F2;
+  width: 80rem;
+}
+
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.footer__items a:hover {
+  text-decoration: underline;
+}
+
+/*https://developer.mozilla.org/fr/docs/Web/CSS/How_to/Layout_cookbook/Sticky_footers*/
