@@ -32,7 +32,7 @@
   <main>
     <div class="form">
       <section>
-        <div>
+        <div class="form__text">
           <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
           <p>En plein centre-ville ou en pleine nature</p>
         </div>
@@ -44,12 +44,31 @@
           <input class="form__search-button" type="submit" value="Rechercher">
         </form>
         <div class="filters">
-          <h2>Filtres</h2>
+          <p>Filtres</p>
           <div class="filters__buttons">
-            <button class="filters__button" type="button"><i class="fa-solid fa-money-bill-wave filters__icon" aria-hidden="true"></i>Économique</button>
-            <button class="filters__button" type="button"><i class="fa-solid fa-child filters__icon" aria-hidden="true"></i>Familial</button>
-            <button class="filters__button" type="button"><i class="fa-solid fa-heart filters__icon" aria-hidden="true"></i>Romantique</button>
-            <button class="filters__button" type="button"><i class="fa-solid fa-dog filters__icon" aria-hidden="true"></i>Animaux autorisés</button>
+            <button class="filters__button" type="button">
+              <container class="filters__icon">
+                <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+              </container>
+              Économique</button>
+
+            <button class="filters__button" type="button">
+              <container class="filters__icon">
+                <i class="fa-solid fa-child" aria-hidden="true"></i>
+              </container>
+              Familial</button>
+
+            <button class="filters__button" type="button">
+              <container class="filters__icon">
+                <i class="fa-solid fa-heart" aria-hidden="true"></i>
+              </container>
+              Romantique</button>
+
+            <button class="filters__button" type="button">
+              <container class="filters__icon">
+                <i class="fa-solid fa-fire" aria-hidden="true"></i>
+              </container>
+              Nos pépites</button>
           </div>
         </div>
         <div class="info">
