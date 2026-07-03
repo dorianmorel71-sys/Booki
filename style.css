@@ -234,6 +234,8 @@ header img {
 
 .hebergements {
   width: 65%;
+  display: flex;
+  flex-direction: column;
 }
 
 .hebergements h2 {
@@ -241,11 +243,57 @@ header img {
 }
 
 .hebergements__cards {
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 .hebergements__card {
+  background-color: white;
+  height: 207px;
+  width: 250px;
+  border-radius: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
 
+.hebergements__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 250px;
+  padding-left: 15px;
+}
+
+.hebergements__card-content .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.hebergements__card-content .card-subtitle {
+  margin: 0;
+  font-size: 14px;
+}
+
+.hebergements__card-img {
+  height: 117px;
+  width: 240px;
+  border-radius: 20px 20px 0 0;
+  margin-top: 5px;
+}
+
+.hebergements__read-more {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hebergements__read-more a {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .populaires {
