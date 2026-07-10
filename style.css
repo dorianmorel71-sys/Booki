@@ -21,9 +21,9 @@ body {
 
 .main-container {
   width: 100%;
-  max-width: 1440px;
-  padding: 0 27px;
+  padding: 0 20px;
   box-sizing: border-box;
+  max-width: 1440px;
 }
 
 a {
@@ -341,6 +341,11 @@ header img {
   gap: 30px;
 }
 
+.activity__title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
 .activity__cards {
   display: flex;
   justify-content: space-between;
@@ -370,13 +375,60 @@ header img {
   font-weight: 700;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  bottom: 0;
+  background-color: #F2F2F2;
+  width: 100%;
+}
+
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.footer__items a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 1024px) {
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
 
+  .hebergements-and-populaires section {
+    box-sizing: border-box;
+  }
+
   .hebergements {
     width: 100%;
+  }
+
+  .hebergements__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .hebergements__card {
+    height: 207px;
+    width: 268px;
+  }
+
+  .hebergements__card-img {
+    height: 124px;
+    width: 268px;
   }
 
   .populaires {
@@ -401,36 +453,22 @@ header img {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+
+  .activity__card {
+    width: 193px;
+    height: 270px;
+  }
+
+  .activity__img {
+    width: 193px;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   /* ... */
-}
-
-
-footer {
-  display: flex;
-  justify-content: center;
-}
-
-.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  bottom: 0;
-  background-color: #F2F2F2;
-  width: 100%;
-}
-
-.footer__items {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.footer__items a:hover {
-  text-decoration: underline;
 }
 
 /*https://developer.mozilla.org/fr/docs/Web/CSS/How_to/Layout_cookbook/Sticky_footers*/
