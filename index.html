@@ -21,10 +21,10 @@
       <img src="./images/logo/Booki.png" alt="logo Booki">
       <ul class="header__nav">
         <li>
-          <a class="header__nav-link active" href="index.html">Hébergement</a>
+          <a class="header__nav-link active" href="#hebergements">Hébergements</a>
         </li>
         <li>
-          <a class="header__nav-link">Activités</a>
+          <a class="header__nav-link" href="#activities">Activités</a>
         </li>
       </ul>
     </div>
@@ -42,6 +42,7 @@
           </div>
           <input class="form__search-input" type="search" placeholder="Marseille, France">
           <input class="form__search-button" type="submit" value="Rechercher">
+          <span class="fa-solid fa-magnifying-glass form__search-button-mobile" type="submit"></span>
         </form>
         <div class="filters">
           <p>Filtres</p>
@@ -82,7 +83,7 @@
     <div class="hebergements-and-populaires">
       <section class="hebergements">
         <h2>Hébergements à Marseille</h2>
-        <div class="hebergements__cards">
+        <div id="hebergements" class="hebergements__cards">
           <a href="#">
             <article class="hebergements__card card">
               <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit" class="hebergements__card-img">
@@ -274,10 +275,8 @@
     </div>
 
     <section>
-      <div class="activity">
-        <div class="activity__title">
+      <div id="activities" class="activity">
           <h2>Activité à Marseille</h2>
-        </div>
         <div class="activity__cards">
           <a href="#">
             <article class="activity__card card">
