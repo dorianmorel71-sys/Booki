@@ -8,6 +8,10 @@
   --filter-bg-color: #DEEBFF;
 }
 
+a {
+  cursor: pointer;
+}
+
 .fa-solid {
   color: var(--main-color);
   font-weight: 900;
