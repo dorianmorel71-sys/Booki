@@ -18,7 +18,7 @@ a {
 }
 
 body {
-  justify-content: center;
+  width: 100%;
   margin: 0;
 }
 
@@ -26,6 +26,8 @@ body {
   padding: 0 20px;
   box-sizing: border-box;
   max-width: 1440px;
+  margin: 0 auto; 
+  width: 100%;
 }
 
 a {
@@ -113,6 +115,8 @@ header img {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  max-width: 100%;
+  align-items: flex-start;
 }
 
 .form__text h1 {
@@ -417,6 +421,7 @@ footer {
 }
 
 @media (max-width: 1024px) {
+
   .hebergements-and-populaires {
     flex-direction: column;
     gap: 30px;
@@ -441,7 +446,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
   .main-container {
     padding: 0;
   }
